@@ -1,0 +1,425 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+//  Переменные для кода
+
+$color-black-bg: #282828;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    
+}
+
+header{
+    background-image: url(../img/bgc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.head{
+
+}
+
+.head__adres{
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head__navigation{
+    display: flex;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.head__navigation__border{
+    padding: 15px 100px;
+}
+
+.head__navigation__border-right{
+    border-right: solid 1px #fff;
+    padding: 15px 100px;
+}
+
+.head__digustation{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 580px;
+    button{
+        padding: 15px 30px;
+        background-color: #998431;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+    }
+}
+
+.bg-black-sec{
+    background-color: $color-black-bg;
+    padding: 100px 0px;
+    
+}
+
+
+.like-vkus{
+    position: relative;
+    border: solid 3px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+    img{
+        margin-bottom: 60px;
+    }
+}
+
+.like-vkus__zagalovok{
+    margin: 60px 0px 40px 0px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.like-vkus__text{
+    width: 733px;
+    margin: 40px 0px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 160px;
+        background-color: #fff;
+        top: -40px;
+        // bottom: 10px;
+        right: 295px;
+        
+    }
+}
+
+.bg-white-sec{
+    background-color: #E6E3C4;
+    color: #282828;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ramka-content{
+    border-top: 1px solid #282828;
+    border-bottom: 1px solid #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.plodi-marsela{
+    display: block;
+
+    button{
+        margin-top: 72px;
+        padding: 15px 30px;
+        background-color: #998431;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+    }
+}
+
+.plodi-marsela__new{
+     padding-bottom: 30px;
+}
+
+.plodi-marsela__zaglushkatxt{
+    position: relative;
+    font-size: 14px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 160px;
+        height: 1px;
+        background-color: #282828;
+        top: -30px;
+        left: 0px;
+    }
+    width: 445px
+    
+}
+
+.plodi-marsela__goda-vina{
+    width: 445px;
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+        padding: 10px 0px;
+        // padding-bottom: 15px;
+        // border-bottom: 1px solid #282828;
+        p{
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.border-bottom{
+    position: relative;
+    border-bottom: 1px solid #282828;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 120px;
+        width: 1px;
+        background-color: #282828;
+        top: 0px;
+        left: 85px;
+    }
+}
+
+.plodi-marsela__zaglushkatxt-end{
+    width: 445px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.karinki-vina-marsela{
+    width: 540px;
+}
+
+.karinki-vina-marsela__butilki{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+// .img-fix{
+//     width: 255px;
+// }
+
+@media screen and (max-width: 1110px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+
+    .head__navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        margin-top: 30px;
+    }
+
+    .head__navigation__border-right{
+        border-right: 0px;
+        border-top: 1px solid #fff;
+        padding: 15px 100px;
+    }
+
+    .head__navigation__border{
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .like-vkus__text{
+        width: 100%;
+        margin: 40px 0px;
+        padding: 0px 20px;
+        &::after{      
+            height: 0px;
+            width: 0px;
+        }
+    }
+
+    .head__digustation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 220px;
+    }
+
+    .ramka-content{
+        border-top: 1px solid #282828;
+        border-bottom: 1px solid #282828;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0px;
+    }
+
+    .plodi-marsela{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .karinki-vina-marsela{
+        // width: 433px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .img-fix{
+        width: 255px;
+    }
+
+    .karinki-vina-marsela__butilki{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+
+    .plodi-marsela__zaglushkatxt{
+        margin-bottom: 30px;
+        &::after{
+            width: 0px;
+        }
+        width: 100%;
+        
+    }
+
+    .plodi-marsela__goda-vina{
+        width: 100%;
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+            p{
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .plodi-marsela__zaglushkatxt-end{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+}
+
+// @media (min-width: 490px) and (max-width: 1105px) {
+//     .plodi-marsela{
+//         width: 100%;
+//         display: block;
+//         text-align: center;
+//     }
+
+//     .karinki-vina-marsela{
+//         width: 433px;
+//         margin-top: 30px;
+
+//         // img{
+//         //     max-width: 100%;
+//         // }
+//     }
+
+//     .img-fix{
+//         width: 255px;
+//     }
+
+//     .karinki-vina-marsela__butilki{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 30px;
+//         margin-top: 30px;
+//     }
+
+//     .plodi-marsela__zaglushkatxt{
+//         margin-bottom: 30px;
+//         &::after{
+//             width: 0px;
+//         }
+//         width: 100%;
+        
+//     }
+
+//     .plodi-marsela__goda-vina{
+//         width: 100%;
+//         div{
+//             display: flex;
+//             justify-content: space-around;
+//             align-items: center;
+//             padding: 10px 0px;
+//             p{
+//                 padding-left: 20px;
+//             }
+//         }
+//     }
+
+//     .border-bottom{
+//         border-bottom: 1px solid #282828;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         &::after{
+//             width: 0px;
+//         }
+//     }
+
+//     .apapt-block{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//     }
+
+//     .plodi-marsela__zaglushkatxt-end{
+//         width: 100%;
+//         margin-top: 30px;
+//         margin-bottom: 30px;
+//         font-size: 14px;
+//     }
+// }
